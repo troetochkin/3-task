@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'CarlaSansLight';
+	src: url('../fonts/CarlaSansLight.ttf') format('truetype');
+	font-style: Light;
+	font-weight: Light;
+}
+
+p {
+	font-family: 'CarlaSansLight';
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #976060;
+	flex-direction: column;
+	gap: 20px;
+}
+.glass-btn {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	padding: 15px 30px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	color: white;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+.glass-btn:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.neumorphic-btn {
+	background: #e0e0e0;
+	border-radius: 10px;
+	padding: 15px 30px;
+	box-shadow: 6px 6px 6px #ffffff, -6px -6px 6px #ffffff;
+	border: none;
+	color: #333;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+.neumorphic-btn:active {
+	box-shadow: inset 6px 6px 10px #bebebe, inset -6px -6px 10px #ffffff;
+}
+.clickbox {
+	background-color: lightsteelblue;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
